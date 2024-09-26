@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f8ff;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .container {
+        text-align: center;
+    }
+    
+    h1 {
+        color: #ff69b4;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #ff1493;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    button:hover {
+        background-color: #ff85c0;
+    }
+    
+    #surpriseMessage {
+        margin-top: 20px;
+        font-size: 24px;
+        color: #4caf50;
+        transition: opacity 0.5s;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    </style>
+    <script>document.getElementById("surpriseBtn").addEventListener("click", function() {
+        const surpriseMessage = document.getElementById("surpriseMessage");
+        surpriseMessage.classList.toggle("hidden");
+        surpriseMessage.style.opacity = surpriseMessage.classList.contains("hidden") ? "0" : "1";
+    });
+    </script>
+    <title>Birthday Surprise</title>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Happy Birthday! 🎉</h1>
+        <button id="surpriseBtn"><a href="info.html">Click for a Surprise!</a></button>
+        <div id="surpriseMessage" class="hidden"> Wishing you all the best on your special day! 🎈</div>
+    </div>
+</body>
+</html>

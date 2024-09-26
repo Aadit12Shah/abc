@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(80%);
+}
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="1.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="2.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="3.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="4.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="5.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="6.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="7.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="8.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="9.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="10.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="11.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="12.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="13.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="14.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="15.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="16.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="17.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="18.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="19.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="20.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="21.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="22.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="23.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="24.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="25.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="26.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="27.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="28.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="29.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="30.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <a href="mine.html"><img src="us.jpg" alt="Description of Image 3"></a>
+        </div>
+        <div class="gallery-item"></div>
+            <img src="1.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="2.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="3.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="4.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="5.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="6.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="7.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="8.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="9.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="10.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="11.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="12.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="13.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="14.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="15.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="16.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="17.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="18.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="19.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="20.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="21.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="22.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="23.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="24.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="25.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="26.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="27.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="28.jpg" alt="Description of Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="29.jpg" alt="Description of Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="30.jpg" alt="Description of Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="us.jpg" alt="Description of Image 3">
+        </div>
+    </div>
+</body>
+</html>
